@@ -1,0 +1,224 @@
+body {
+    background-color: #457b9d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+.game-container {
+    width: 40%;
+    aspect-ratio: 1/1;
+    border: 10px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.options {
+    min-width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-opts, .lower-opts {
+    min-width: 100%;
+    display: flex;
+}
+
+.score-area {
+    width: 60%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #fefae0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 5px;
+}
+
+.game-header {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    color: #f1faee;
+    font-family: 'Alfa Slab One', serif;
+    text-transform: uppercase;
+    margin-left: 6em;
+    transform: translate(-50%, -50%);
+}
+
+.start-button {
+    width: 100%;
+    aspect-ratio: 1/1;
+    outline: none;
+    border: none;
+    background-color: #03045e;
+    color: #f1faee;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 50%;
+    font-family: 'Protest Riot', sans-serif;
+    cursor: pointer;
+}
+
+.red-opt, .blue-opt, .yellow-opt, .green-opt {
+    width: 60%;
+    aspect-ratio: 1/1;
+    border: 5px solid black;
+}
+
+.top-opts div, .lower-opts div {
+    transition: 0.4s ease;
+}
+
+.top-opts div:hover, .lower-opts div:hover{
+    border-color: white;
+}
+
+.red-opt {
+    background-color: #ef233c;
+    border-top-right-radius: 100%;
+}
+
+.blue-opt {
+    background-color: #00a8e8;
+    border-bottom-right-radius: 100%;
+}
+
+.yellow-opt {
+    background-color: #ffff3f;
+    border-bottom-left-radius: 100%;
+}
+
+.green-opt {
+    background-color: #52b788;
+    border-top-left-radius: 100%;
+}
+
+.score-header, .game-over-header, .display-score {
+    font-weight: 500;
+    margin: 0;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.game-over-header {
+    font-size: 3em;
+    color: #e0fbfc;
+}
+
+.display-score {
+    color: #e0fbfc;
+    font-size: 1.2em;
+}
+
+.inner-main-board {
+    width: 40%;
+    aspect-ratio: 1/1;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #fefae0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    transition: 0.4s ease;
+}
+
+.score-container {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #a8dadc;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden;
+}
+
+.game-over-container {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #293241;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 15px;
+    backface-visibility: hidden;
+    transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 2em;
+    color: white;
+    aspect-ratio: 2/1;
+    background-color: black;
+    transition: 0.4s ease;
+    font-family: 'Patua One', serif;
+}
+
+.play-again {
+    outline: none;
+    border: none;
+    background-color: #ee6c4d;
+    font-size: 1.4em;
+    cursor: pointer;
+    color: #e0fbfc;
+    font-family: 'Protest Riot', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.dark-red {
+    background-color: #c1121f;
+}
+
+.dark-blue {
+    background-color: #023e8a
+
+}
+
+.dark-yellow {
+    background-color: #ffc300;
+
+}
+
+.dark-green {
+    background-color: #007f5f;
+ }
+
+.dark-red, .dark-blue, .dark-yellow, .dark-green {
+    border-color: white;
+}
